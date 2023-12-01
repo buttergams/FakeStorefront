@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store Front</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/modal-styles.css">
+
+    <!-- Only to fix the GET favicon.ico error in browser console -->
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+    <!-- Unordered list used to make navbar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Fake Store</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li id="electronics-category"><a href="electronics.html">Electronics</a></li>
+            <li id="jewelry-category"><a href="jewelry.html">Jewelry</a></li>
+            <li id="mens-clothing-category"><a href="mens-clothing.html">Men's Clothing</a></li>
+            <li id="womens-clothing-category"><a href="womens-clothing.html">Women's Clothing</a></li>
+            <button class="cartBtn" onclick="openCartModal()" type="button">Cart</button>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- Display Section -->
+    <div id="display">
+    <!-- Content will be dynamically loaded -->
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="cartModalBody">
+                    <!-- Cart content will be dynamically loaded -->
+                </div>
+                <div class="modal-footer" id="modalFooter">
+                    
+                </div>
+                <div id="totalContainer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <h5>Unit 4 Project</h5>
+    </div>
+    </footer>
+
+    <!-- Bootstrap dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="scripts/index.js"></script>
+
+</body>
+
+</html>
